@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090914">
+<meta name="description" content="Ashirvad Gaming - 22 free browser games: Snake, Battle Arena, Racing, Flappy Bird and more.">
+<title>Ashirvad Gaming | Play Zone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="ld"><div class="lt">🔥 ASHIRVAD GAMING</div><div class="lb"><i></i></div></div>
+<div id="pg"></div>
+<canvas id="bgc"></canvas>
+<header>
+<div class="logo"><img src="logo.jpeg" alt="Ashirvad Gaming logo" width="40" height="40"> Ashirvad Gaming</div>
+<button id="mb" aria-label="Menu">☰</button>
+<nav id="nv"><a href="#home">Home</a><a href="#games">Games</a><a href="#leaderboard">Leaderboard</a><a href="#contact">Contact</a><a href="#" id="lg">🔐 Login</a></nav>
+</header>
+
+<section class="hero" id="home">
+<h1>WELCOME TO <span>GAMING ZONE</span></h1>
+<p>Play <b id="ty"></b><span class="cur">|</span></p>
+<p>Mobile aur PC dono par chalta hai. Bilkul free!</p>
+<a href="#games" class="btn">EXPLORE GAMES</a> <a href="#contact" class="btn o">CONTACT ME</a>
+<div class="stats"><div><b data-n="20" data-s="+">0</b><span>Games</span></div><div><b data-n="100" data-s="%">0</b><span>Free</span></div><div><b data-n="10">0</b><span>Top Scores</span></div></div>
+</section>
+
+<section class="sec" id="games">
+<h2>🎮 POPULAR GAMES</h2>
+<div class="grid" id="gl"></div>
+</section>
+
+<section class="sec" id="leaderboard">
+<h2>🏆 LEADERBOARD</h2>
+<div class="row"><select id="lbg"><option value="ludo">Ludo</option><option value="br">Battle Royale</option><option value="sub">Subway Runner</option><option value="ninja">Fruit Ninja</option><option value="candy">Candy Match</option><option value="geo">Geometry Dash</option><option value="piano">Piano Tiles</option><option value="stack">Stack Tower</option><option value="cross">Crossy Road</option><option value="blob">Blob Battle</option><option value="g2048">2048</option><option value="snake">Snake</option><option value="arena">Battle Arena</option><option value="race">Racing Zone</option><option value="run">Adventure Run</option><option value="flap">Flappy Bird</option><option value="space">Space Shooter</option><option value="brick">Brick Breaker</option><option value="catcher">Fruit Catcher</option><option value="mole">Whack-a-Mole</option><option value="memo">Brain Challenge</option><option value="pong">Ping Pong</option></select></div>
+<ol id="lbl" class="lbl"><li>Google se login karo aur apna score banao!</li></ol>
+</section>
+
+<section class="sec" id="contact">
+<h2>📞 CONTACT ME</h2>
+<div class="grid">
+<div class="card c"><div class="ic">👤</div><h3>Name</h3><p>Ashirvad Singh</p></div>
+<a class="card c" href="https://www.google.com/maps/search/?api=1&query=Raxaul+Purbi+Champaran+845305+Bihar" target="_blank" rel="noopener"><div class="ic">📍</div><h3>Location</h3><p>Raxaul Purbi Champaran, 845305</p><span class="btn">OPEN MAPS</span></a>
+<a class="card c" href="tel:+918809288845"><div class="ic">📱</div><h3>Phone</h3><p>8809288845</p><span class="btn pulse">CALL NOW</span></a>
+<a class="card c" href="https://wa.me/918809288845?text=Hi%20Ashirvad%2C%20mujhe%20aapki%20gaming%20site%20ke%20bare%20me%20baat%20karni%20hai" target="_blank" rel="noopener"><div class="ic">💬</div><h3>WhatsApp</h3><p>8809288845</p><span class="btn">CHAT NOW</span></a>
+<a class="card c" href="mailto:ashivadkumar1819@gmail.com?subject=Ashirvad%20Gaming&body=Hi%20Ashirvad%2C%0A%0A"><div class="ic">✉️</div><h3>Email</h3><p>ashivadkumar1819@gmail.com</p><span class="btn">EMAIL ME</span></a>
+<a class="card c" href="https://instagram.com/ashirvad__singh" target="_blank" rel="noopener"><div class="ic">📸</div><h3>Instagram</h3><p>@ashirvad__singh</p><span class="btn">FOLLOW</span></a>
+</div>
+</section>
+
+<footer>© 2026 Ashirvad Gaming | Made for Gamers 🎮</footer>
+
+<button id="up" aria-label="Upar jao">⬆</button>
+
+<div id="ov">
+<button id="snd" aria-label="Sound">🔊</button>
+<h2 id="gt"></h2>
+<div id="sc">Score: 0</div>
+<canvas id="c" width="400" height="500"></canvas>
+<div id="msg"></div>
+<div class="row" id="vm" style="display:none"><button class="btn o" onclick="vehicle='🏍️'">🏍️ Bike</button><button class="btn o" onclick="vehicle='🚗'">🚗 Car</button></div>
+<div class="pad row"><div class="dp"><button data-k="u">▲</button><button data-k="l">◀</button><button data-k="d">▼</button><button data-k="r">▶</button></div><button class="f" data-k="f">🔥</button></div>
+<p class="help" id="hp"></p>
+<div class="row"><button class="btn" onclick="restart()">RESTART</button><button class="btn o" onclick="closeG()">CLOSE</button></div>
+</div>
+
+<script src="game.js"></script>
+<script src="fx.js"></script>
+<script type="module" src="auth.js"></script>
+</body>
+</html>
