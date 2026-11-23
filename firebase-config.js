@@ -1,6 +1,6 @@
 // Firebase keys (Firebase Console > Project settings > Your apps se li gayi hain)
 export const firebaseConfig = {
-  apiKey: "AIzaSyCz7Vksb8FPtH1PxlVAvTH2m-gt8GxmUpY",
+  apiKey: "YOUR_API_KEY",
   authDomain: "ashirvadgaming-be0df.firebaseapp.com",
   projectId: "ashirvadgaming-be0df",
   storageBucket: "ashirvadgaming-be0df.firebasestorage.app",
